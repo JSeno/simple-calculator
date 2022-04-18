@@ -1,9 +1,11 @@
 """
     Inicio do a minha atualização da calculadora em python.
     Vou transformar essa simples conta de soma em uma calculadora melhorada com uma interface usando Tkinter.
-
+ 
+ TODO: Limitar o número de digitos no display;
 """
 # Importando as bibliotecas necessárias
+from sys import maxsize
 from tkinter import * # Usando * significa que todas as bibliotecas estão sendo importadas
 from tkinter import ttk
 
@@ -21,11 +23,13 @@ cor5 = '#ffab40' # Orange - Botões de operação
 janela = Tk() # Criando a janela principal
 janela.title("Calculadora") # Titulo da janela principal que ficara no topo da tela
 janela.geometry("235x310") # Tamanho da janela principal, width x height
+janela.resizable(False, False) # Bloquear o tamanho da tela
 janela.config(bg=cor1) # Configurando a cor de fundo da janela esse comando é necessário para mudar a cor de fundo da janela e o config é para mudar a cor de fundo do texto
 
 # Criando os frames de display
 frame_display = Frame(janela, width=235, height=50, bg=cor3) # Criando o frame de display da calculadora, após isso defino o tamanho da largura e altura
 frame_display.grid(row=0, column=0) # Posicionando o frame de display na primeira linha e primeira coluna
+
 
 
 """ Aqui inicia a parte lógica da calculadora """
