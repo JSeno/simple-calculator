@@ -1,7 +1,4 @@
 # Calculadora simples em python
 
-Inicialmente foi criado um aplicativo que soma dois números, e estou trabalhando para melhorar meu projeto.
-
-Usarei Tkinter para criar a interface gráfica.
-
-Serie de atualização dos pequenos projetos para meu treinamento.
+Calculadora simples finalizada, antes era uma simples calculadora de soma de dois números.
+Agora ela tem uma interface gráfica é funcional falta algumas correções de limite de caracteres, e e bloqueio da janela.
