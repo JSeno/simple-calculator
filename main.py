@@ -5,7 +5,6 @@
  TODO: Limitar o número de digitos no display;
 """
 # Importando as bibliotecas necessárias
-from sys import maxsize
 from tkinter import * # Usando * significa que todas as bibliotecas estão sendo importadas
 from tkinter import ttk
 
@@ -122,3 +121,4 @@ b_18.place(x=178, y=208)
 """ Aqui termina a interface gráfica da calculadora """
 
 janela.mainloop() # Fica em loop até que o usuário feche a janela
+
