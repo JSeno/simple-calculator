@@ -4,9 +4,8 @@
  
 """
 # Importando as bibliotecas necessárias
-from re import L
 from tkinter import * # Usando * significa que todas as bibliotecas estão sendo importadas
-from tkinter import ttk
+from tkinter import ttk # Importando a ttk que é usada
 
 
 """ Aqui é a interface gráfica da calculadora """
