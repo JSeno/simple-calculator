@@ -1,4 +1,6 @@
 # Calculadora simples em python
 
-Calculadora simples finalizada, antes era uma simples calculadora de soma de dois números.
-Agora ela tem uma interface gráfica é funcional falta algumas correções de limite de caracteres, e e bloqueio da janela.
+Calculadora de soma, subtração, multiplicação e divisão.
+Limitada a 16 caracteres.
+
+Atualização do meu primeiro projeto em python que era uma calculadora simples agora conta com uma interface gráfica usando tkinter.
