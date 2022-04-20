@@ -2,9 +2,9 @@
     Inicio do a minha atualização da calculadora em python.
     Vou transformar essa simples conta de soma em uma calculadora melhorada com uma interface usando Tkinter.
  
- TODO: Limitar o número de digitos no display;
 """
 # Importando as bibliotecas necessárias
+from re import L
 from tkinter import * # Usando * significa que todas as bibliotecas estão sendo importadas
 from tkinter import ttk
 
@@ -42,6 +42,10 @@ def entrada_valores(event):
     global todos_valores # Variável global para que o valor seja acessível em todas as funções
     todos_valores = todos_valores + str(event) # Aqui é o que acontece quando o botão for clicado
     
+    # Limitando o número de digitos no display
+    if len(todos_valores) > 16:
+        todos_valores = todos_valores[:-1]
+
     # Passando o resultado para o label de display
     valor_text.set(todos_valores) # Função para deletar um caracter do display
 
